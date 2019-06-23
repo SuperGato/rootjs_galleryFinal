@@ -25,7 +25,8 @@ function initiateApp(){
 	*/
 	makeGallery(pictures);
 	addModalCloseHandler();
-	$("#gallery").sortable();
+	var sort = $("#gallery");
+	sort.sortable();
 }
 function makeGallery(imageArray){
 	//use loops and jquery dom creation to make the html structure inside the #gallery section
